@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 6vw; /* Text size relative to viewport width */
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Responsive width */
+}
+
+label {
+  font-size: 1.8rem; /* Larger font size for labels */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+}
+
+button {
+  font-size: 1.6rem; /* Larger font size for button */
+  padding: 1rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw; /* Increase font size for smaller screens */
+  }
+
+  label {
+    font-size: 1.6rem; /* Adjust label font size for small screens */
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
